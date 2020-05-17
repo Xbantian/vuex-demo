@@ -12,7 +12,7 @@ globals:
     CKEDITOR: true
 rules:
     # 不要提交console
-    no-console: 2
+    no-console: 1
     # 禁止在条件中使用常量表达式
     no-constant-condition: 2
     #  程序中不能出现debugger
