@@ -3,6 +3,7 @@
     {{ count }}
     <button @click="decrement">-1</button>
     <button @click="increment">+1</button>
+    <div>如果报错去main里切换store为模块化store</div>
   </div>
 </template>
 <script>
