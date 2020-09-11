@@ -1,0 +1,14 @@
+.mytest {
+	background-color: aqua;
+	width: 100px;
+	height: 100px;
+	position: fixed;
+	top: 0;
+}
+.mytest1 {
+	background-color: aqua;
+	width: 100px;
+	height: 100px;
+	position: fixed;
+	top: 200px;
+}

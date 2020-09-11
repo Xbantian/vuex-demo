@@ -12,6 +12,14 @@
 </template>
 <script>
 import { mapState, mapMutations, mapGetters } from 'vuex'
+window.onerror = e => {
+  console.log(e)
+}
+
+console.log(window.onerror)
+setTimeout(() => {
+  throw new Error('this is the error happened in b.js')
+}, 2000)
 export default {
   data() {
     return {

@@ -1,17 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+		<title><%= htmlWebpackPlugin.options.title %></title>
+		<!-- <link
+			rel="stylesheet"
+			type="text/css"
+			href="https://github.githubassets.com/assets/github-a8ed939bfc2953ff1e7c45e3f0ad39c4.css"
+		/>
+		<script type="text/javascript">
+			console.log(1)
+			console.log(2)
+
+			console.log(document)
+		</script> -->
+		<!-- <script src="http://127.0.0.1:8202/h5-extension-service/check-discover?pageName=goods-detail&kdtid=123&discoverParamsKey=extensionParams&callback=myCallback"></script> -->
+		<!-- <script src="http://127.0.0.1:8202/h5-extension-service/check-discover?pageName=buy&kdtId=55307761&discoverParamsKey=extensionParams&callback=myCallback"></script> -->
+		<!-- 新接口 -->
+		<!-- <script src="http://127.0.0.1:8202/h5-extension-service/check-design?pageName=goods-detail&kdtid=123&discoverParamsKey=extensionParams&callback=myCallback"></script> -->
+		<script type="text/javascript" onerror="function(a,b,c){ console.log(a,b,c)}">
+			// window.extensionParams = {
+			// 	kdtId: 55425029,
+			// 	pageName: 'buy',
+			// 	conditionContext: { pageType: 'h5', platform: 'mobile' },
+			// }
+
+			// window.extensionParams = { //定制未使用1
+			// 	kdtId: 55425029,
+			// 	pageName: 'buy',
+			// 	conditionContext: { pageType: 'h5', platform: 'mobile' },
+			// }
+			//重定向
+			// window.extensionParams = {
+			// 	kdtId: 42860470,
+			// 	pageName: 'CouponCodeShow',
+			// 	conditionContext: { pageType: 'h5', platform: 'mobile' },
+			// }
+
+			window.extensionParams = {
+				// 有定制1
+				kdtId: 51312508,
+				pageName: 'buy',
+				conditionContext: { pageType: 'h5', platform: 'mobile' },
+			}
+
+			// window.extensionParams = {  //version 跳转
+			// 	// 商详1
+			// 	kdtId: 54401439,
+			// 	pageName: 'goods-detail__v2',
+			// 	conditionContext: { pageType: 'h5', platform: 'mobile' },
+			// }
+			window.myCallback = a => {
+				console.log(a)
+			}
+			// new Image().src = 'http://127.0.0.1:8202/h5-extension-service/log?msg=123'
+		</script>
+		<!-- 重定向 -->
+		<!-- <script src="http://127.0.0.1:8202/h5-extension-service/check-design?pageName=CouponCodeShow&kdtId=42860470&discoverParamsKey=extensionParams&callback=myCallback"></script> -->
+		<!--  有定制1 -->
+		<script src="http://127.0.0.1:8202/h5-extension-service/check-design?pageName=buy&kdtId=51312508&discoverParamsKey=extensionParams&callback=myCallback"></script>
+		<!-- version 跳转 -->
+		<!-- <script src="http://127.0.0.1:8202/h5-extension-service/check-design?pageName=goods-detail__v2&kdtId=54401439&discoverParamsKey=extensionParams&callback=myCallback"></script> -->
+		<!-- 定制未使用1 -->
+		<!-- <script src="http://127.0.0.1:8202/h5-extension-service/check-design?pageName=buy&kdtId=55425029&discoverParamsKey=extensionParams&callback=myCallback"></script> -->
+		<!-- <script charset="utf-8" src="./goods1.js"></script> -->
+		<script charset="utf-8" src="https://file-test.yzcdn.cn/mall-cloud/buy.1e0c709f.js"></script>
+	</head>
+	<body>
+		<link rel="stylesheet" type="text/css" href="./test.css" />
+		<noscript>
+			<strong
+				>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript
+				enabled. Please enable it to continue.</strong
+			>
+		</noscript>
+		<div class="mytest"></div>
+		<div class="flash"></div>
+		<div id="app"></div>
+		<!-- built files will be auto injected -->
+		<!-- 
+		<script
+			async
+			charset="utf-8"
+			src="https://github.githubassets.com/assets/github-bootstrap-e3dbc279.js"
+		></script>
+		<script type="text/javascript">
+			console.log(4)
+		</script> -->
+
+		<div class="mytest1"></div>
+	</body>
 </html>

@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
+    <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
     <HelloWorld
       :obj="obj"
       class="qwe"
@@ -10,6 +10,7 @@
       asd="asd"
       msg="Welcome to Your Vue.js App"
     />
+    <xyz />
   </div>
 </template>
 
@@ -22,6 +23,7 @@ export default {
 
   components: {
     HelloWorld,
+    xyz: window.mallCloud.components.buyDemoText,
   },
   data() {
     return {
