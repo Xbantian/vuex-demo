@@ -512,11 +512,11 @@ export const CIRCLE_CREATE_WAY = dataToEnum([
 export const LOGISTICS_STATUS = dataToEnum([
   { value: 0, label: '未开放', name: 'NO_STATUS' },
   { value: 1, label: '开放', name: 'YES_STATUS' },
+  { value: 1, label: '设置', name: 'YSEETING' },
 ]);
 
 export const STOP_DELIVERY_STATUS = dataToEnum([
   { value: 0, label: '未设置', name: 'NO_SEETING' },
-  { value: 1, label: '已设置', name: 'YES_SEETING' },
   { value: 2, label: '已完成', name: 'OVER_SEETING' }
 ]);
 
@@ -524,7 +524,7 @@ export const STOP_DELIVERY_STATUS = dataToEnum([
 export const VEHICLE_CAR_TYPE = dataToEnum([
   { value: 0, label: '小面包车', name: 'CAR_SAM' },
   { value: 1, label: '中面包车', name: 'CAR_MAP' },
-  { value: 2, label: '依维柯', name: 'CAR_BIG' },
+  { value: 2, label: '依', name: 'CAR_BIG' },
   { value: 3, label: '小型货车', name: 'CAR_YI' },
   { value: 4, label: '4.2米', name: 'CAR_MALL' },
   { value: 5, label: '6.8米', name: 'CAR_CAN' },
