@@ -369,13 +369,14 @@ export const DRIVER_LACK_TYPE = dataToEnum([
 export const DRIVER_STATE_TYPE = dataToEnum([
   { value: 1, label: '待核准', name: 'DRIVER_STATE_BEFORE' },
   { value: 2, label: '待判责', name: 'DRIVER_STATE_ORDER' },
+  { value: 3, label: '判责', name: 'DRIVER_S_AFTER' },
   { value: 3, label: '已完成', name: 'DRIVER_STATE_AFTER' }
 ]);
 
 export const RESPONSIBLE_TYPE = dataToEnum([
   { value: 1, label: '库存仓', name: 'DRIVER_STATE_BEFORE' },
   { value: 2, label: '司机', name: 'DRIVER_STATE_ORDER' },
-  { value: 3, label: '无法判责', name: 'DRIVER_STATE_AFTER' }
+  { value: 3, label: '判责', name: 'DRIVER_STATE_AFTER' }
 ]);
 // responsible
 // 订单异常 类型
@@ -388,12 +389,11 @@ export const OPERATION_IN_STATE = dataToEnum([
 //客户类型
 export const ORDER_CUSTOMER_TYPE = dataToEnum([
   { value: '大客户', label: '大客户', name: 'ORDER_BIG' },
-  { value: '单店', label: '单店', name: 'ORDER_COMMON' }
 ]);
 //补货状态
 export const REPLENISH_STATUS = dataToEnum([
-  { value: 1, label: '待确认', name: 'TO_BE_CONFIRMED' },
-  { value: 2, label: '已发起', name: 'INITIATED' },
+  { value: 1, label: '待确认', name: 'TO_BENFIRMED' },
+  { value: 2, label: '起', name: 'INITIATED' },
   { value: 3, label: '已关闭', name: 'CLOSED' }
 ]);
 //补货类型
