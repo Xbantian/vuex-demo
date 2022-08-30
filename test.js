@@ -12,11 +12,12 @@ import { dataToEnum } from '@/libs/create-enum.js';
   8: '员工福利'
  */
 export const COUPON_GROUP = dataToEnum([
-  { value: 0, label: '活动', name: 'ACTIVITY' },
+  { value: 0, label: '活', name: 'ACTIVITY' },
   { value: 1, label: '售后', name: 'AFTER_SALE' },
   { value: 2, label: '新人', name: 'NEW_COMER' },
   { value: 3, label: '权益', name: 'DISCOUNT' },
-  { value: 4, label: '客情', name: 'CUSTOMER' },
+  { value: 4, label: '客情', name: '' },
+  { value: 5, label: '用户召回', name: 'RECALL' },
   { value: 5, label: '用户召回', name: 'RECALL' },
   { value: 6, label: '新品', name: 'NEW_GOODS' },
   { value: 7, label: '消费返券', name: 'REBATE' },
@@ -25,7 +26,7 @@ export const COUPON_GROUP = dataToEnum([
 
 export const AGIO_TYPES = dataToEnum([
   { value: 1, label: '商品优惠券', name: 'GOODS' },
-  { value: 2, label: '普通运费优惠券', name: 'FREIGHT' },
+  { value: 2, label: '普优惠券', name: 'FREIGHT' },
   { value: 3, label: '精准送运费优惠券', name: 'ACCURATE_DELIVERY' },
   { value: 4, label: '商品红包', name: 'RED_ENVELOPE' }
 ]);
